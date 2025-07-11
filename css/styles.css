@@ -42,7 +42,7 @@ body {
 }
 
 /* Tarjeta individual */
-.tarjeta > div {
+.tarjeta>div {
     max-width: 300px;
     background-color: white;
     border-radius: 1rem;
@@ -53,7 +53,7 @@ body {
 }
 
 /* Hover de tarjeta */
-.tarjeta > div:hover {
+.tarjeta>div:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
@@ -88,7 +88,7 @@ body {
 }
 
 /* Modo oscuro */
-.dark .tarjeta > div {
+.dark .tarjeta>div {
     background-color: #1f2937;
     border-color: #374151;
 }
@@ -106,24 +106,29 @@ body {
 }
 
 /* Tarjeta individual con sombra amarilla */
-.tarjeta > div {
+.tarjeta>div {
     max-width: 300px;
     background-color: white;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3); /* sombra amarilla */
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+    /* sombra amarilla */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     border: 1px solid #e5e7eb;
 }
 
 /* Hover con sombra amarilla más intensa */
-.tarjeta > div:hover {
+.tarjeta>div:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5); /* sombra amarilla más fuerte */
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5);
+    /* sombra amarilla más fuerte */
 }
+
 .tarjeta a.inline-flex {
-    background-color: #D20000;         /* Fondo rojo */
-    color: #FFD700;                    /* Texto amarillo */
+    background-color: #D20000;
+    /* Fondo rojo */
+    color: #FFD700;
+    /* Texto amarillo */
     font-weight: 600;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
@@ -134,4 +139,39 @@ body {
 .tarjeta a.inline-flex:hover {
     background-color: #FFD700;
     color: #D20000;
+}
+
+.noticias {
+
+    color: black;
+    /* Letras negras */
+    font-size: 2rem;
+    /* Letra más grande, ajusta el valor según lo necesites */
+    font-weight: bold;
+}
+
+.tarjeta .max-w-sm {
+    transition: background-color 0.3s ease;
+}
+
+.tarjeta .max-w-sm:hover {
+    background-color: #1D4ED8;
+    /* Azul */
+    color: white;
+}
+
+.tarjeta .max-w-sm:hover h5,
+.tarjeta .max-w-sm:hover p {
+    color: white;
+}
+
+/* Opcional: cambiar también el fondo del botón si deseas que combine */
+.tarjeta .max-w-sm:hover a.inline-flex {
+    background-color: #2563eb;
+    /* Azul un poco más claro */
+}
+
+.tarjeta .max-w-sm:hover a.inline-flex:hover {
+    background-color: #1e40af;
+    /* Azul más oscuro en hover */
 }
