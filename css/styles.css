@@ -1,0 +1,137 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    color: blue;
+}
+
+.letraLogo {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1f2937;
+}
+
+.colorEnlaces {
+    font-family: 'Mulish', sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.amarillo:hover {
+    background-color: #FFD700;
+    color: #D20000;
+    transition: background-color 0.2s ease;
+}
+
+/* Imágenes del carrusel */
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contenedor de tarjetas */
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Tarjeta individual */
+.tarjeta > div {
+    max-width: 300px;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e5e7eb;
+}
+
+/* Hover de tarjeta */
+.tarjeta > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Imagen dentro de tarjeta */
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    padding: 5%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* Contenido de la tarjeta */
+.tarjeta .p-5 {
+    padding: 1.25rem;
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* Modo claro */
+.tarjeta h5 {
+    color: #111827;
+}
+
+.tarjeta p {
+    color: #374151;
+}
+
+/* Modo oscuro */
+.dark .tarjeta > div {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+
+.dark .tarjeta .p-5 {
+    background-color: #1f2937;
+}
+
+.dark .tarjeta h5 {
+    color: #f9fafb;
+}
+
+.dark .tarjeta p {
+    color: #d1d5db;
+}
+
+/* Tarjeta individual con sombra amarilla */
+.tarjeta > div {
+    max-width: 300px;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3); /* sombra amarilla */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e5e7eb;
+}
+
+/* Hover con sombra amarilla más intensa */
+.tarjeta > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5); /* sombra amarilla más fuerte */
+}
+.tarjeta a.inline-flex {
+    background-color: #D20000;         /* Fondo rojo */
+    color: #FFD700;                    /* Texto amarillo */
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover: invierte colores para dar efecto interactivo */
+.tarjeta a.inline-flex:hover {
+    background-color: #FFD700;
+    color: #D20000;
+}
